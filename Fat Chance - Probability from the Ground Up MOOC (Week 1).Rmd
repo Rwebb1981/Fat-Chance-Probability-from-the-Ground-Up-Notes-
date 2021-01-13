@@ -1,0 +1,13 @@
+---
+title: "Fat Chance - Probability from the Ground Up (Notes) (Week 1)"
+author: "Rick"
+date: "13/01/2021"
+output: 
+  html_document:
+    code_folding: "show"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
