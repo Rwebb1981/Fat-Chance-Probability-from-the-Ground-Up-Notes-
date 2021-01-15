@@ -11,3 +11,24 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### 1 - Counting Numbers
+
+This explains how to count from 1-10 using fingers and then 1-283.
+
+It is then explained how we can count from 23-283 by throwing away the numbers 1-22, which leaves us with 261 (i.e. 283-22).
+
+Then we are introduced to the 'dot' convention (i.e. 23,24,25...281,282,283).
+
+Next we are shown how to transform the numbers from 23,24,25 back down to 1,2,3 by deducting 22 from each number.
+
+Following this we are asked to express this in a formula. (i.e. There are *n* numbers between 1 and *n*).A further formula can be used to express the previous point in more detail. This would involve counting the numbers between a starting point *k* and a larger number *n*. The formula would be $n - (k - 1)$. 
+
+Therefore, the total number of numbers could be expressed as $n - (k - 1) = n - k + 1$
+
+Now, how many numbers between 23 and 283 are divisible by 5? To answer this we can remember that there are 261 numbers between 23 and 283 and we know that not all are divisible by 5. So what do we do? Well we can list them all out (i.e. 25,30,35...270,275,280). Then we can count the numbers of the list by dividing each one by 5, which will transform each down 5,6,7...54,55,56. This is a list of numbers we know how to count and we can simply use our formula from before $56 - 4 = 52$ (i.e. $n = 56$ and k = 5$ and the formula is $n - k + 1$). 
+
+## Counting Numbers Practice
+
+Q. In a sports stadium with numbered seats, every seat is occupied except seats  33  through  97 .
+
+A. XXXX
