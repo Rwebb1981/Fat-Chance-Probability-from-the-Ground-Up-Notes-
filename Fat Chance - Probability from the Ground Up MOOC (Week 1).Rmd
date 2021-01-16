@@ -25,10 +25,51 @@ Following this we are asked to express this in a formula. (i.e. There are *n* nu
 
 Therefore, the total number of numbers could be expressed as $n - (k - 1) = n - k + 1$
 
-Now, how many numbers between 23 and 283 are divisible by 5? To answer this we can remember that there are 261 numbers between 23 and 283 and we know that not all are divisible by 5. So what do we do? Well we can list them all out (i.e. 25,30,35...270,275,280). Then we can count the numbers of the list by dividing each one by 5, which will transform each down 5,6,7...54,55,56. This is a list of numbers we know how to count and we can simply use our formula from before $56 - 4 = 52$ (i.e. $n = 56$ and k = 5$ and the formula is $n - k + 1$). 
+Now, how many numbers between 23 and 283 are divisible by 5? To answer this we can remember that there are 261 numbers between 23 and 283 and we know that not all are divisible by 5. So what do we do? Well we can list them all out (i.e. 25,30,35...270,275,280). Then we can count the numbers of the list by dividing each one by 5, which will transform each down 5,6,7...54,55,56. This is a list of numbers we know how to count and we can simply use our formula from before $56 - 4 = 52$ (i.e. $n = 56$ and $k = 5$ and the formula is $n - k + 1$). 
 
 ## Counting Numbers Practice
 
 Q. In a sports stadium with numbered seats, every seat is occupied except seats  33  through  97 .
 
-A. XXXX
+A. $97 - 32 = 65$
+
+Q. In a sports stadium with numbered seats, every seat is occupied except seats  33  through  97. Suppose the fans are superstitious and only want to sit in even numbered seats because, otherwise, they fear their team will lose. How many even numbered seats are still available in the block of seats numbered  33  through  97?
+
+A. $(65 - 1) / 2 = 32$
+
+### Interlude: Large Numbers
+
+We need methods of dealing with very large numbers. Archimedes wrote a letter to a local monarch called the 'Sand Reckoner'. In this letter he proposed some tools to deal with large numbers. He proposed he could use it to count all of the grains of sand in the universe. 
+
+We now call this 'exponential notation' and it uses exponents of the power power of 10. For example, we would write 100 as 10 squared (10^2^), 1000 as 10 cubed (10^3^) and 10,000 as 10 to the forth (10^4^) etc.
+
+So  number like 3,170,000 would be written as 3.17 x 10^6^. 
+
+This make it easy to multiply numbers, for example 10^6^ x 10^8^ = 10^14^.
+This can be expressed as the formula 10^a^ x 10^b^ = 10^a+b^
+
+But what about when we have different constants?
+An example may be (3 x 10^6^) x (7 x 10^8^) = 21 x 10^14^ (i.e. multiply the constants and add the exponents). If we wanted to write ths in exponential notation, we could say that it is approximately 2 x 10^15^ (as 21 is about 2 times 10).
+
+An example to show this can be 'how many second are the in the history of the universe'? The university is about 13.8 billion years old (written in exponential notation this would be 1.38 x 10^10^ years). To get the number of seconds we first need to multiply this by the number of seconds in a year, of which there are 31,536,000, or 3.17 x 10^7^). To calculate the number of second in the universe, we just take (1.38 x 10^10^) x (3.17 x 10^7^) = approximately 4.14 x 10^17^.
+
+Another example may be to estimate the number of operations that the fastest computer known today can perform if it were running over the history of the universe. The current speed is 90 petaflops (9 x 10^16^) and we know we have 4.14 x 10^17^ seconds in the universe. Therefore, the the formula would be (9 x 10^16^) x (4.14 x 10^17^) = 39.6 x 10^33^ (or in exponential notation this would be 3.96 x 10^34^). 
+
+Practice Problem:
+
+Q. Harvard has a  32 -digit billing code for all financial transactions at the University, which means there are  1032  distinct billing numbers. For unambiguous record keeping, each financial transaction requires a distinct billing number. Suppose there are  5,000  employees at the University, and each employee makes ten financial transactions each day of the year. (For the purposes of this problem, we will ignore the existence of leap years.)
+
+How many distinct billing numbers would Harvard need to use over a period of  400  years (the approximate lifetime of the institution)? Choose the best answer.
+
+A. First write the variables as exponential notation and then multiply them:
+(5 x 10^3^) x (10) x (3.65 x 10^2^) x (4 x 10^2^)
+
+= 5 x 3.65 x 4 x 10^3^ x 10 x 10^2^ x 10^2^
+
+= 5 x 3.65 x 4 x 10^8^
+
+= 2 x 3.65 x 10^9^ = 7.30 x 10^9^
+
+= 7.3 x 10^9^
+
+
